@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ff9a4b;
+  height: 50px;
+}
+
+main {
+  width: 960px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.main-item {
+  width: 300px;
+  background-color: #eee;
+  margin-right: 30px;
+  padding: 10px;
+  position: relative;
+}
+
+.main-item:last-child {
+  margin-right: 0;
+}
+
+.item-num {
+  padding: 3px;
+  background-color: #ff9a4b;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item-img1 {
+  background-image: url(img/flow01.png);
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.item-img2 {
+  background-image: url(img/flow02.png);
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.item-img3 {
+  background-image: url(img/flow03.png);
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.title {
+  padding: 15px 0 5px;
+}
+
+
+footer {
+  background-color: #aaa;
+  height: 50px;
+}
+
+/* メディアクエリ */
+@media screen and (max-width:768px) {
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .main-item {
+    width: 90%;
+    margin:0 5% 20px 5%;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+}
